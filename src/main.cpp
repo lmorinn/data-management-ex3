@@ -4,9 +4,9 @@
 
 using namespace std;
 
+string user_name;
 void greeting() {
   cout << "Who are you?" << endl;
-  string user_name;
   cin >> user_name;
   cout << "Hello, " << user_name << "!" << endl;
 }
@@ -39,10 +39,8 @@ int main() {
   cout << "Heads: " << heads_total << ", " << "Tails: " << tails_total << endl;
 
   if (heads_total > tails_total) {
-    cout << "You win" << endl;
+    cout << user_name << " won!" << endl;
   } else {
-    cout << "You missing" << endl;
+    cout << user_name << " lost." << endl;
   }
-
-  
 }
