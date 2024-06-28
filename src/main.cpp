@@ -29,4 +29,12 @@ int main() {
     cout << "Round " << round << ": " << result << endl;
   }
   cout << "Heads: " << heads_total << ", " << "Tails: " << tails_total << endl;
+
+  if (heads_total > tails_total) {
+    cout << "You win" << endl;
+  } else {
+    cout << "You missing" << endl;
+  }
+
+  
 }
