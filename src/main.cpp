@@ -4,6 +4,13 @@
 
 using namespace std;
 
+void greeting() {
+  cout << "Who are you?" << endl;
+  string user_name;
+  cin >> user_name;
+  cout << "Hello, " << user_name << "!" << endl;
+}
+
 int main() {
   int round_num = 3;
   int heads_total = 0;
@@ -11,8 +18,9 @@ int main() {
   random_device seed;
   mt19937 engine(seed());
 
-  cout << "Tossing a coin..." << endl;
+  greeting();
 
+  cout << "Tossing a coin..." << endl;
   for (int i = 0; i < round_num; i++) {
     bool isHeads = (engine() % 2);
     string result;
